@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuvant Consulting · Consultoría de IA para empresas</title>
+<meta name="description" content="Nuvant Consulting: consultoría de inteligencia artificial enfocada en resultados. Nuestro nuevo sitio web está en construcción.">
+<meta name="theme-color" content="#FEFEFE">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nuvant Consulting">
+<meta property="og:description" content="Consultoría de IA enfocada en resultados. Muy pronto, nuestro nuevo sitio.">
+<meta property="og:image" content="https://fiorellagonz31.github.io/Nuvant_pagina/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#000622;--lima:#BBF551;--teal:#1B8B9B;--verde:#6DC274;--grad:linear-gradient(90deg,#1B8B9B,#6DC274 50%,#BBF551)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:Rubik,system-ui,-apple-system,sans-serif;background:#FEFEFE;color:var(--navy);display:flex;flex-direction:column;overflow:hidden;-webkit-font-smoothing:antialiased}
+  .glow{position:fixed;border-radius:50%;filter:blur(90px);opacity:.35;pointer-events:none;z-index:0}
+  .g1{width:46vmax;height:46vmax;background:var(--teal);top:-22vmax;left:-16vmax;opacity:.16;animation:drift 22s ease-in-out infinite alternate}
+  .g2{width:40vmax;height:40vmax;background:var(--lima);bottom:-20vmax;right:-14vmax;opacity:.28;animation:drift 18s ease-in-out infinite alternate-reverse}
+  @keyframes drift{to{transform:translate(6vmax,4vmax) scale(1.08)}}
+  main{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px}
+  .logo{width:min(560px,82vw);height:auto;opacity:0;transform:translateY(18px);animation:in 1.1s cubic-bezier(.22,1,.36,1) .15s forwards}
+  .status{margin-top:clamp(36px,6vh,56px);display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:99px;background:rgba(0,6,34,.04);border:1px solid rgba(0,6,34,.08);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;opacity:0;animation:in 1s cubic-bezier(.22,1,.36,1) .45s forwards}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 0 rgba(109,194,116,.6);animation:pulse 2s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(109,194,116,0)}100%{box-shadow:0 0 0 0 rgba(109,194,116,0)}}
+  h1{margin-top:22px;font-size:clamp(26px,3.6vw,40px);font-weight:500;letter-spacing:-.02em;line-height:1.15;opacity:0;animation:in 1s cubic-bezier(.22,1,.36,1) .6s forwards}
+  h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  p{margin-top:14px;max-width:520px;font-size:17px;font-weight:300;line-height:1.6;color:rgba(0,6,34,.65);opacity:0;animation:in 1s cubic-bezier(.22,1,.36,1) .75s forwards}
+  footer{position:relative;z-index:1;padding:0 24px 26px;text-align:center;font-size:13px;color:rgba(0,6,34,.45)}
+  .bar{position:fixed;left:0;right:0;bottom:0;height:6px;background:var(--grad);transform-origin:left;transform:scaleX(0);animation:bar 1.6s cubic-bezier(.22,1,.36,1) .3s forwards}
+  @keyframes in{to{opacity:1;transform:none}}
+  @keyframes bar{to{transform:scaleX(1)}}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <main>
+    <img class="logo" src="logo.png" alt="Nuvant Consulting" width="2400" height="596">
+    <div class="status"><span class="dot"></span>Sitio en construcción</div>
+    <h1>Estamos construyendo algo <em>nuevo</em>.</h1>
+    <p>Consultoría de inteligencia artificial enfocada en resultados. Muy pronto, nuestro nuevo sitio.</p>
+  </main>
+  <footer>© 2026 Nuvant Consulting · Lima, Perú</footer>
+  <div class="bar"></div>
+</body>
+</html>
